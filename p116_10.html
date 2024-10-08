@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>시작 툴</legend>
+            <input type="radio" id="new_tab" name="start_tool" value="new_tab">
+            <label for="new_tab">새 탭 열기</label><br>
+
+            <input type="radio" id="continue" name="start_tool" value="continue">
+            <label for="continue">중단한 위치에서 계속하기</label><br>
+
+            <input type="radio" id="open_page_set" name="start_tool" value="open_page_set">
+            <label for="open_page_set">즐겨찾기 페이지 또는 페이지 모음 열기</label>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보 및 보안</legend>
+            <input type="checkbox" id="sync_service" name="personal_info" value="sync_service">
+            <label for="sync_service">동기화 및 서비스</label><br>
+
+            <input type="checkbox" id="login_permission" name="personal_info" value="login_permission">
+            <label for="login_permission">로그인 허용</label><br>
+
+            <input type="checkbox" id="preload_page" name="personal_info" value="preload_page">
+            <label for="preload_page">페이지 미리 로드</label>
+        </fieldset>
+    </form>
