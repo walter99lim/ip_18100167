@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 웹 페이지</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 전체 레이아웃 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* 세로 화면에서는 left 숨기기 */
+        .left {
+            display: none;
+        }
+
+        /* 가로 화면에서는 left와 right 나란히 배치 */
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+            }
+            .left {
+                width: 30%;
+                display: block;
+                background-color: #c8e6c9; /* 초록색 배경 */
+            }
+            .right {
+                width: 70%;
+                display: block;
+                background-color: #fff9c4; /* 노란색 배경 */
+            }
+        }
+
+        /* 기본 콘텐츠 구성 */
+        .content {
+            padding: 16px;
+            border: 1px solid #7c7c7c;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        /* 목록 스타일 */
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 왼쪽 메뉴 (세로일 때는 숨김) -->
+        <div class="left">
+            <div class="content">
+                <h1>List</h1>
+                <ul>
+                    <li>Velit ipsum ullamco</li>
+                    <li>Nulla qui officia animi</li>
+                    <li>quis proident tempor ipsum</li>
+                    <li>et sunt sit culpa ad</li>
+                    <li>fugiat reprehenderit sint mollit</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 오른쪽 콘텐츠 -->
+        <div class="right">
+            <div class="content">
+                <h1>Lorem ipsum</h1>
+                <p>Sunt nostrud consequat</p>
+                <p>Aute do et ullamco</p>
+                <p>Deserunt irure Lorem</p>
+                <p>Velit ipsum ullamco et</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

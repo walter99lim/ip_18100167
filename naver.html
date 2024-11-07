@@ -1,0 +1,188 @@
+<!-- 1. 너비 1080px의 컨테이너를 만듭니다. -->
+<!-- 2. 컨테이너를 중앙 정렬합니다. -->
+<!-- 3. 아래 margin을 8px로 줍니다. -->
+<div class="container">
+    <!-- 4. div.left를 왼쪽에 붙이고 -->
+    <!-- 5. 너비 740px, 높이 428px로 크기를 잡습니다. -->
+    <div class="left"></div>
+    <!-- 6. div.right를 오른쪽에 붙이고 -->
+    <!-- 7. 너비 332px, 높이 428px로 크기를 잡습니다. -->
+    <div class="right"></div>
+</div>
+<style>
+    /* 컨테이너 스타일 */
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    /* 왼쪽 */
+    .left {
+        width: 740px;
+        height: 428px;
+        background-color: #e74c3c; /* 원하는 색상으로 지정 */
+    }
+
+    /* 오른쪽 */
+    .right {
+        width: 332px;
+        height: 428px;
+        background-color: #3498db; /* 원하는 색상으로 지정 */
+    }
+</style>
+<!-- 1. div.container는 이전 문제와 같습니다. -->
+<div class="container">
+    <!-- 2. ul.gnb 태그를 왼쪽에 붙입니다. -->
+    <!-- 3. 위아래 padding을 8px로 줍니다. -->
+    <!-- 4. 왼쪽 오른쪽 padding을 0px로 줍니다. -->
+    <ul class="gnb">
+        <!-- 5. 내부의 li 태그들은 list-style-type을 none으로 지정합니다. -->
+        <!-- 6. 내부의 li 태그들은 왼족으로 붙여서 나란한게 만듭니다. -->
+        <!-- 7. 내부의 li 태그들은 왼쪽 padding을 16px로 줍니다. -->
+        <!-- 8. 첫 번째 요소는 왼쪽 padding을 0px로 줍니다. -->
+        <li>메일</li>
+        <li>카페</li>
+        <li>블로그</li>
+        <li>쇼핑</li>
+        <li>사전</li>
+        <li>뉴스</li>
+        <li>증권</li>
+        <li>부동산</li>
+        <li>지도</li>
+    </ul>
+    <!-- 9. ul.rank 태그는 오른쪽에 붙입니다. -->
+    <!-- 10. 위아래 padding을 8px로 줍니다. -->
+    <ul class="rank">
+        <!-- 11. 내부의 li 태그들은 list-style-type을 none으로 지정합니다. -->
+        <li>실시간 검색 순위</li>
+    </ul>
+</div>
+<style>
+    /* 컨테이너 스타일 */
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 왼쪽 메뉴 스타일 */
+    .gnb {
+        display: flex;
+        list-style-type: none;
+        padding: 8px 0;
+        background-color: #2ecc71; /* 초록색 배경 */
+    }
+
+    .gnb li {
+        padding: 8px 16px;
+        color: white;
+    }
+
+    .gnb li:first-child {
+        padding-left: 0; /* 첫 번째 왼쪽 패딩 0 */
+    }
+
+    /* 오른쪽 실시간 검색 순위 스타일 */
+    .rank {
+        list-style-type: none;
+        padding: 8px;
+        background-color: #f1c40f; /* 노란색 배경 */
+    }
+
+    .rank li {
+        padding: 8px;
+        color: black;
+    }
+</style>
+<!-- 추가합니다. -->
+<!-- 별다른 스타일 처리는 없습니다. -->
+<div class="container">
+    <h1>Logo</h1>
+</div>
+<!-- (2)번 문제와 같습니다. -->
+<div class="container">
+    <ul class="gnb">
+        <li>메일</li>
+        <li>카페</li>
+        <li>블로그</li>
+        <li>쇼핑</li>
+        <li>사전</li>
+        <li>뉴스</li>
+        <li>증권</li>
+        <li>부동산</li>
+        <li>지도</li>
+    </ul>
+    <ul class="rank">
+        <li>실시간 검색 순위</li>
+    </ul>
+</div>
+<!-- (1)번 문제와 같습니다. -->
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+<!-- (1)번 문제와 같습니다: 2개 배치했습니다. -->
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+<!-- (1)번 문제와 같습니다: 2개 배치했습니다. -->
+<div class="container">
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <!-- 추가합니다. -->
+    <div class="container">
+        <!-- 높이를 80px로 지정했습니다. -->
+        <div class="footer"></div>
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃 구성</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <h1>Logo</h1>
+    </header>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="container">
+        <ul class="gnb">
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>쇼핑</li>
+            <li>사전</li>
+            <li>뉴스</li>
+            <li>증권</li>
+            <li>부동산</li>
+            <li>지도</li>
+        </ul>
+        <ul class="rank">
+            <li>실시간 검색 순위</li>
+        </ul>
+    </div>
+
+    <!-- 직사각형 레이아웃 -->
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <p></p>
+    </footer>
+</body>
+</html>
