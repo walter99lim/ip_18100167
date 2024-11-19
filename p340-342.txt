@@ -1,0 +1,98 @@
+p340-342
+
+10번 - 2){}
+
+11번 1) 30!!!!
+2) 11
+11
+13
+3) 10
+
+12번 -
+= 연산자는 값을 대입할 때 사용하고, == 연산자는 두 값이 같은지를 비교할 때 사용한다.
+
+13번 -
+if (x > 10 && x < 20) {
+  alert(x);
+}
+
+14번 -
+let i = i;
+while (i <= 10) {
+  if (i % 5 === 0) {
+    alert(i);
+  }
+  i++;
+}
+
+15번 -
+for (let i = 10; i >= 0; i -= 3) {
+  alert(i);
+}
+
+16번 - 
+let cm = prompt("센티미터를 입력하세요:");
+let inches = cm / 2.54;
+let feet = Math.floor(inches / 12);
+let remainingInches = inches % 12;
+
+alert(`${cm}cm는 ${feet}피트 ${remainingInches.toFixed(2)}인치입니다.`);
+
+17번 -
+let radius = prompt("원기둥의 반지름을 입력하세요:");
+let height = prompt("원기둥의 높이를 입력하세요:");
+
+let volume = Math.PI * Math.pow(radius, 2) * height;
+
+alert(`원기둥의 부피는 ${volume.toFixed(2)}입니다.`);
+
+18번 - 
+let number = prompt("입력해주세요:");
+let thousands = Math.floor(number / 1000);
+let hundreds = Math.floor((number % 1000) / 100);
+let tens = Math.floor((number % 100) / 10);
+let ones = number % 10;
+
+alert(`천의 자리: ${thousands}, 백의 자리: ${hundreds}, 십의 자리: ${tens}, 일의 자리: ${ones}`);
+
+19번 -
+let year = prompt("연도를 입력하세요:");
+let animals = ["원숭이", "닭", "개", "돼지", "쥐", "소", "호랑이", "토끼", "용", "뱀", "말", "양"];
+let zodiac = animals[year % 12];
+
+alert(`${year}년은 ${zodiac}의 해입니다.`);
+
+20번 -
+let rows = 10;
+
+for (let i = 1; i <= rows; i++) {
+  let stars = "";
+  for (let j = 1; j <= i; j++) {
+    stars += "*";
+  }
+  console.log(stars);
+}
+
+21번 -
+function factorial(n) {
+  if (n === 0 || n === 1) return 1;
+  return n * factorial(n - 1);
+}
+
+let number = prompt("입력해주세요:");
+alert(`${number}! = ${factorial(number)}`);
+
+22번 -
+let book = {
+  이름: "C# 프로그래밍(2판)",
+  초판발행: "2021년 1월 5일",
+  지은이: "윤인성",
+  펴낸이: "전태호",
+  펴낸곳: "한빛아카데미(주)",
+  책임편집: "김성무",
+  기획: "김성무",
+  편집: "정서린",
+  디자인: "최현희, 이아란"
+};
+
+console.log(book);
