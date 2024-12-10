@@ -16,3 +16,75 @@ select 태그 내부에는 option 태그를 사용합니다. opt 태그는 존�
 (7) 시맨틱 태그는 시맨틱 웹을 구현할 때 사용하는 방법입니다. (○)
 시맨틱 태그(<article>, <section> 등)는 콘텐츠의 의미를 명확히 하여 검색 엔진 최적화(SEO)에 도움을 준다.
 
+2. 다음 중 HTML5 표준에 새롭게 도입된 시맨틱 태그는?
+정답: ③ <article>
+<article> 태그는 독립적인 콘텐츠를 나타내는 시맨틱 태그로 HTML5에서 새롭게 도입되었다.
+
+3. 다음 중 HTML5 표준에 새롭게 도입된 시맨틱 태그가 아닌 것은?
+정답: ② <span>
+<span> 태그는 HTML4에서 사용된 인라인 태그로, 시맨틱 태그가 아니다.
+
+04. 사용자로부터 데이터를 입력받을 때 사용하는 태그는?
+정답: ① <input>
+<input> 태그는 텍스트, 패스워드, 라디오 버튼 등의 사용자 입력을 받을 수 있습니다.
+
+5. HTML 입력 양식 중에서 여러 개의 선택지 중 하나를 선택하는 종류는?
+정답: ③ radio
+라디오 버튼은 여러 개 중 하나의 옵션만 선택할 수 있다.
+
+6. select 태그 내부에서 각 항목을 만드는 데 사용하는 태그는?
+정답: ② option
+<option> 태그는 드롭다운 메뉴 항목을 생성한다.
+
+7. 다음 중에서 인라인 형식의 태그는?
+정답: ③ <span>
+<span> 태그는 인라인 요소이며, 다른 인라인 요소를 포함하거나 텍스트 스타일링에 사용된다.
+
+8. form 태그의 method 속성을 GET과 POST로 입력할 때, GET 방식으로 데이터를 전송했을 때 URL의 변화를 작성하시오.
+http://example.com/form?name=John&age=25
+데이터가 URL 뒤에 붙어 노출된다.
+
+9. 다음 입력 양식을 만드시오.
+<table border="1">
+    <tr>
+        <th>아이디</th>
+        <td><input type="text" name="id"></td>
+    </tr>
+    <tr>
+        <th>비밀번호</th>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><button type="submit">제출</button></td>
+    </tr>
+</table>
+
+10. 입력 양식 만들기
+HTML 코드
+html
+코드 복사
+<form>
+    <fieldset>
+        <legend>시작 그룹</legend>
+        <input type="radio" name="start" value="new"> 새 탭 열기<br>
+        <input type="radio" name="start" value="current"> 동일한 위치에서 계속하기<br>
+        <input type="radio" name="start" value="session"> 이전 세션 페이지 열기<br>
+    </fieldset>
+    <fieldset>
+        <legend>개인 정보 및 보안</legend>
+        <input type="checkbox" name="sync" value="sync"> 동기화 서비스<br>
+        <input type="checkbox" name="safe" value="safe"> 안전 브라우징<br>
+        <input type="checkbox" name="preload" value="preload"> 페이지 미리 로드<br>
+    </fieldset>
+</form>
+
+11. 입력 양식 만들기 (글 작성하기)
+<form>
+    <label>작성자: <input type="text" name="writer"></label><br>
+    <label>아이디: <input type="text" name="id"></label><br>
+    <label>이메일: <input type="email" name="email"></label><br>
+    <label>휴대폰: <input type="tel" name="phone"></label><br>
+    <label>글 제목: <input type="text" name="title"></label><br>
+    <label>내용: <textarea name="content"></textarea></label><br>
+    <button type="submit">제출</button>
+</form>
